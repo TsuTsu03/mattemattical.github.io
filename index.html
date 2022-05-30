@@ -182,25 +182,44 @@
           <p class="font-italic">Select Actuator by using the dropdown below</p>
         </div>
       </div>
-      <div>
-        <table class="table">
-          <thead>
-            <tr>
-              <th><select id="fields" class="form-control" aria-label="Default select example">
-                <option selected>Select Actuator</option>
-                <option value="1">Solenoid Water Source</option>
-                <option value="2">Solenoid Harvesting</option>
-                <option value="3">Solenoid Sprinkler</option>
-                <option value="4">Water Pump Water Source</option>
-                <option value="5">Light Panel</option>
-                <option value="6">Operational Control</option>
-              </select></th>
-              <th><button type="button" id="relayon" class="buttonON" >ON</button></th>
-              <th><button type="button" id="relayoff" class="buttonOFF" >OFF</button></th>
-              <th> Status:&nbsp;<span id="relaystate">Please wait...</span></th>
-            </tr>
-          </thead>
-        </table>
+        <div>
+          <div class="row">
+            <div class="col-sm-8">
+                <select id="fields" class="form-control algae" aria-label="Default select example">
+                <option selected>Select Algae...</option>
+                <option value="0">Ellipsoidea</option>
+                <option value="1">Vulgaris</option>
+                <option value="2">Spirulina</option>
+              </select>
+            </div>
+            <div class="col-sm-4">
+              <button type="button" id="relayon" class="buttonON float-center" >Confirm</button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-6">
+            <select id="fields" class="form-control" aria-label="Default select example">
+              <option selected>Select Actuator...</option>
+              <option value="1">Solenoid Water Source</option>
+              <option value="2">Solenoid Harvesting</option>
+              <option value="3">Solenoid Sprinkler</option>
+              <option value="4">Water Pump Water Source</option>
+              <option value="5">Light Panel</option>
+              <option value="6">Operational Control</option>
+            </select>
+          </div>
+          <div class="col-sm-2 float-right">
+            <button type="button" id="relayon" class="buttonON float-right" >ON</button>
+          </div>
+          <div class="col-sm-2">
+            <button type="button" id="relayoff" class="buttonOFF" >OFF</button>
+          </div>
+          <div class="col-sm-2">
+            <b>Status:&nbsp;<span id="relaystate">Please wait...</span></b>
+          </div>
+     
       </div>
   <footer class="bg-light pb-5">
     <div class="container text-center">
